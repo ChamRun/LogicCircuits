@@ -1,0 +1,1 @@
+-intstyle "ise" -incremental -lib "unisims_ver" -lib "unimacro_ver" -lib "xilinxcorelib_ver" -lib "secureip" -o "C:/Things/Programming/uni/LogicCircuits/TEST_gate_isim_beh.exe" -prj "C:/Things/Programming/uni/LogicCircuits/TEST_gate_beh.prj" "work.TEST_gate" "work.glbl" 
