@@ -5,7 +5,7 @@
   module TEST_gate;
           
    initial begin
-      $display("A simple string");
+      $display("\n\nMy String\n\n");
    end
 
   endmodule

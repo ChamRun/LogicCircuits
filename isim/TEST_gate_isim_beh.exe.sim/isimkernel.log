@@ -2,9 +2,27 @@ Command line:
    TEST_gate_isim_beh.exe
      -simmode  gui
      -simrunnum  0
-     -socket  8079
+     -socket  12523
 
-Wed Nov 03 15:44:26 2021
+Wed Nov 03 15:52:51 2021
 
 
- Elaboration Time: 0.109375 sec
+ Elaboration Time: 0.0625 sec
+
+ Current Memory Usage: 5153.81 Meg
+
+ Total Signals          : 13
+ Total Nets             : 13
+ Total Signal Drivers   : 5
+ Total Blocks           : 2
+ Total Primitive Blocks : 2
+ Total Processes        : 7
+ Total Traceable Variables  : 18
+ Total Scalar Nets and Variables : 93
+
+ Total Simulation Time: 0.078125 sec
+
+ Current Memory Usage: 5153.81 Meg
+
+Wed Nov 03 15:53:06 2021
+

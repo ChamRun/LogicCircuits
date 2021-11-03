@@ -22,7 +22,7 @@
 #define alloca _alloca
 #endif
 static const char *ng0 = "C:/Things/Programming/uni/LogicCircuits/LabFour.v";
-static const char *ng1 = "A simple string";
+static const char *ng1 = "\n\nMy String\n\n";
 
 
 

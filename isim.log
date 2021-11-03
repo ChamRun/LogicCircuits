@@ -7,5 +7,9 @@ Time resolution is 1 ps
 # wave add /
 # run 1000 ns
 Simulator is doing circuit initialization process.
-A simple string
+
+
+My String
+
+
 Finished circuit initialization process.
