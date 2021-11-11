@@ -8,4 +8,16 @@ Time resolution is 1 ps
 # run 1000 ns
 Simulator is doing circuit initialization process.
 Finished circuit initialization process.
-Stopped at time : 10 ns : File "C:/Things/Programming/uni/LogicCircuits/LogiLab0/LogiLab0/One.v" Line 15
+Stopped at time : 9 ns : File "C:/Things/Programming/uni/LogicCircuits/LogiLab0/LogiLab0/One.v" Line 18
+ISim P.20131013 (signature 0x7708f090)
+This is a Full version of ISim.
+# run 1000 ns
+Simulator is doing circuit initialization process.
+Finished circuit initialization process.
+Stopped at time : 4 ns : File "C:/Things/Programming/uni/LogicCircuits/LogiLab0/LogiLab0/One.v" Line 18
+ISim P.20131013 (signature 0x7708f090)
+This is a Full version of ISim.
+# run 1000 ns
+Simulator is doing circuit initialization process.
+Finished circuit initialization process.
+Stopped at time : 4 ns : File "C:/Things/Programming/uni/LogicCircuits/LogiLab0/LogiLab0/One.v" Line 18
