@@ -45,7 +45,8 @@ module myModule_tb();
      
     
 	 //xor_two_input my_gate(out, a_clock, b_clock);
-	 xnor_three_input my_gate(out, a_clock, b_clock, c_clock);
+	 //xnor_three_input my_gate(out, a_clock, b_clock, c_clock);
+	 xnor_sop_three_input my_gate(out, a_clock, b_clock, c_clock);
 	 
 endmodule
 
@@ -61,7 +62,7 @@ module xnor_sop_three_input(d, a, b, c);
 	not g2(nb, b);
 	not g3(nc, c);
 	
-	assign d = (na & nb & nc) | (na & b & c) | (a & nb & c) | (a & b & nc);
+	assign d = !((na & nb & nc) | (na & b & c) | (a & nb & c) | (a & b & nc));
 
 endmodule
 
