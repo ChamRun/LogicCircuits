@@ -45,17 +45,20 @@ module myModule_tb();
      
     
 	 //xor_two_input my_gate(out, a_clock, b_clock);
-	 xor_three_input my_gate(out, a_clock, b_clock, c_clock);
+	 xnor_three_input my_gate(out, a_clock, b_clock, c_clock);
 	 
 endmodule
 
-module xor_two_input(c,a,b);
 
-	input a,b;
-	output c;
-	xor g(c, a, b);
+
+module xnor_three_input(d, a, b, c);
+
+	input a, b, c;
+	output d;
+	xnor g(d, a, b, c);
 
 endmodule
+
 
 
 module xor_three_input(d, a, b, c);
@@ -63,6 +66,15 @@ module xor_three_input(d, a, b, c);
 	input a, b, c;
 	output d;
 	xor g(d, a, b, c);
+
+endmodule
+
+
+module xor_two_input(c,a,b);
+
+	input a,b;
+	output c;
+	xor g(c, a, b);
 
 endmodule
 
