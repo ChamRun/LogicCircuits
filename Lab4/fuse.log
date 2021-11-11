@@ -11,8 +11,7 @@ Compiling module xnor_three_input
 Compiling module myModule_tb
 Compiling module glbl
 Time Resolution for simulation is 1ps.
-Waiting for 1 sub-compilation(s) to finish...
 Compiled 3 Verilog Units
 Built simulation executable C:/Things/Programming/uni/LogicCircuits/Lab4/myModule_tb_isim_beh.exe
-Fuse Memory Usage: 27768 KB
-Fuse CPU Usage: 374 ms
+Fuse Memory Usage: 27756 KB
+Fuse CPU Usage: 358 ms

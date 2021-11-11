@@ -51,6 +51,21 @@ endmodule
 
 
 
+module xnor_sop_three_input(d, a, b, c);
+
+	input a, b, c;
+	output d;
+	
+	wire na, nb, bc;
+	not g1(na, a);
+	not g2(nb, b);
+	not g3(nc, c);
+	
+	assign d = (na & nb & nc) | (na & b & c) | (a & nb & c) | (a & b & nc);
+
+endmodule
+
+
 module xnor_three_input(d, a, b, c);
 
 	input a, b, c;
