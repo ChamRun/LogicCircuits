@@ -1,12 +1,12 @@
 <?xml version='1.0' encoding='UTF-8'?>
 <report-views version="2.0" >
  <header>
-  <DateModified>2021-11-11T10:23:06</DateModified>
+  <DateModified>2021-11-11T10:34:58</DateModified>
   <ModuleName>myModule_tb</ModuleName>
   <SummaryTimeStamp>Unknown</SummaryTimeStamp>
-  <SavedFilePath>C:/Things/Programming/uni/LogicCircuits/LogiLab0/LogiLab0/iseconfig/myModule_tb.xreport</SavedFilePath>
-  <ImplementationReportsDirectory>C:/Things/Programming/uni/LogicCircuits/LogiLab0/LogiLab0\</ImplementationReportsDirectory>
-  <DateInitialized>2021-11-06T20:18:07</DateInitialized>
+  <SavedFilePath>C:/Things/Programming/uni/LogicCircuits/Lab4/iseconfig/myModule_tb.xreport</SavedFilePath>
+  <ImplementationReportsDirectory>C:/Things/Programming/uni/LogicCircuits/Lab4</ImplementationReportsDirectory>
+  <DateInitialized>2021-11-11T10:34:58</DateInitialized>
   <EnableMessageFiltering>false</EnableMessageFiltering>
  </header>
  <body>
