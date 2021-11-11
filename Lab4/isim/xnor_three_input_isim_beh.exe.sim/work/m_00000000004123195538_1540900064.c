@@ -24,7 +24,7 @@
 
 
 
-static void Gate_65_0(char *t0)
+static void Gate_74_0(char *t0)
 {
     char *t1;
     char *t2;
@@ -56,7 +56,7 @@ LAB2:    t2 = (t0 + 1048U);
     t7 = *((char **)t6);
     t8 = (t7 + 56U);
     t9 = *((char **)t8);
-    xsi_vlog_XorGate(t9, 3, t3, t4, t5);
+    xsi_vlog_XnorGate(t9, 3, t3, t4, t5);
     t10 = (t0 + 3088);
     xsi_driver_vfirst_trans(t10, 0, 0);
     t11 = (t0 + 3008);
@@ -66,9 +66,9 @@ LAB1:    return;
 }
 
 
-extern void work_m_00000000004123195538_0597351944_init()
+extern void work_m_00000000004123195538_1540900064_init()
 {
-	static char *pe[] = {(void *)Gate_65_0};
-	xsi_register_didat("work_m_00000000004123195538_0597351944", "isim/myModule_tb_isim_beh.exe.sim/work/m_00000000004123195538_0597351944.didat");
+	static char *pe[] = {(void *)Gate_74_0};
+	xsi_register_didat("work_m_00000000004123195538_1540900064", "isim/xnor_three_input_isim_beh.exe.sim/work/m_00000000004123195538_1540900064.didat");
 	xsi_register_executes(pe);
 }

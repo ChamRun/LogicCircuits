@@ -1,0 +1,28 @@
+Command line:
+   xnor_three_input_isim_beh.exe
+     -simmode  gui
+     -simrunnum  2
+     -socket  5935
+
+Thu Nov 11 21:39:03 2021
+
+
+ Elaboration Time: 0.09375 sec
+
+ Current Memory Usage: 5153.82 Meg
+
+ Total Signals          : 17
+ Total Nets             : 17
+ Total Signal Drivers   : 6
+ Total Blocks           : 2
+ Total Primitive Blocks : 2
+ Total Processes        : 7
+ Total Traceable Variables  : 18
+ Total Scalar Nets and Variables : 97
+
+ Total Simulation Time: 0.109375 sec
+
+ Current Memory Usage: 4681.96 Meg
+
+Thu Nov 11 22:09:22 2021
+
