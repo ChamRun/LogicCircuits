@@ -45,8 +45,8 @@ module myModule_tb();
      
     
 	 //xor_two_input my_gate(out, a_clock, b_clock);
-	 //xnor_three_input my_gate(out, a_clock, b_clock, c_clock);
-	 xnor_sop_three_input my_gate(out, a_clock, b_clock, c_clock);
+	 xnor_three_input my_gate(out, a_clock, b_clock, c_clock);
+	 //xnor_sop_three_input my_gate(out, a_clock, b_clock, c_clock);
 	 
 endmodule
 

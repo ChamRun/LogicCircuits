@@ -1,0 +1,1 @@
+xst -intstyle ise -ifn "C:/Things/Programming/uni/LogicCircuits/Lab5/myModule_tb.xst" -ofn "C:/Things/Programming/uni/LogicCircuits/Lab5/myModule_tb.syr" 
