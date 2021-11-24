@@ -1,0 +1,1 @@
+-intstyle "ise" -incremental -lib "unisims_ver" -lib "unimacro_ver" -lib "xilinxcorelib_ver" -lib "secureip" -o "C:/Things/Programming/uni/LogicCircuits/Lab6/TB_ComparatorGate_isim_beh.exe" -prj "C:/Things/Programming/uni/LogicCircuits/Lab6/TB_ComparatorGate_beh.prj" "work.TB_ComparatorGate" "work.glbl" 

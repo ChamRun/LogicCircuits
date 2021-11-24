@@ -63,14 +63,11 @@ module ComparatorGate(
 		  
 	wire [2:0] y;
 	
-	and g16(y[0], aNot[2], b[2]),
-		 g17(y[1], aNot[1], b[1], c[2]),
-		 g18(y[2], aNot[0], b[0], c[2], c[1]);		 
+	and g16(y[0], bNot[2], a[2]),
+		 g17(y[1], bNot[1], a[1], c[2]),
+		 g18(y[2], bNot[0], a[0], c[2], c[1]);		 
 	
-	or g19(lt, x[0], x[1], x[2]);
+	or g19(gt, y[0], y[1], y[2]);
 	
 	
-	
-
-
 endmodule
