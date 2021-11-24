@@ -35,15 +35,42 @@ module ComparatorGate(
 		  g1(c[1], a[1], b[1]),
 		  g2(c[2], a[2], b[2]);
 		  
+	and g3(et, e, c[0], c[1], c[2]),
+		 g4(lt, l, c[0], c[1], c[2]),
+		 g5(gt, g, c[0], c[1], c[2]);
+		  
 	wire [2:0] aNot;
 	
-	not g3(aNot[0], a[0]),
-		 g3(aNot[1], a[1]),
-		 g3(aNot[2], a[2]);
+	not g6(aNot[0], a[0]),
+		 g7(aNot[1], a[1]),
+		 g8(aNot[2], a[2]);
 		  
-			
+	wire [2:0] x;
 	
-	or g4(lt, );
+	and g9(x[0], aNot[2], b[2]),
+		 g10(x[1], aNot[1], b[1], c[2]),
+		 g11(x[2], aNot[0], b[0], c[2], c[1]);		 
+	
+	or g12(lt, x[0], x[1], x[2]);
+	
+	
+	
+	wire [2:0] bNot;
+	
+	not g13(bNot[0], b[0]),
+		 g14(bNot[1], b[1]),
+		 g15(bNot[2], b[2]);
+		  
+	wire [2:0] y;
+	
+	and g16(y[0], aNot[2], b[2]),
+		 g17(y[1], aNot[1], b[1], c[2]),
+		 g18(y[2], aNot[0], b[0], c[2], c[1]);		 
+	
+	or g19(lt, x[0], x[1], x[2]);
+	
+	
+	
 
 
 endmodule
