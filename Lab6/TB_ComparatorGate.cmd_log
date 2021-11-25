@@ -1,0 +1,2 @@
+xst -intstyle ise -ifn "C:/Things/Programming/uni/LogicCircuits/Lab6/TB_ComparatorGate.xst" -ofn "C:/Things/Programming/uni/LogicCircuits/Lab6/TB_ComparatorGate.syr" 
+xst -intstyle ise -ifn "C:/Things/Programming/uni/LogicCircuits/Lab6/TB_ComparatorGate.xst" -ofn "C:/Things/Programming/uni/LogicCircuits/Lab6/TB_ComparatorGate.syr" 
