@@ -3,9 +3,9 @@
 // Company: 
 // Engineer: 
 // 
-// Create Date:    10:21:57 11/28/2021 
+// Create Date:    12:47:11 11/28/2021 
 // Design Name: 
-// Module Name:    FullAdder 
+// Module Name:    TwoBitTB 
 // Project Name: 
 // Target Devices: 
 // Tool versions: 
@@ -18,12 +18,24 @@
 // Additional Comments: 
 //
 //////////////////////////////////////////////////////////////////////////////////
-module FullAdder(s, co, x, y, ci);
+module TwoBitTB(
+    );
 	 
-	 output s, co;
-	 input x, y, ci;
+	 reg a, b, sel, Cin;
+	 wire Sum, Cout;
 	 
-	 assign s = x ^ y ^ ci;
-	 assign co = (x & ci) | (y & ci) | (x & y);
+	 FullAdder adder0(Sum, Cout, a, (b ^ sel), Cin);
 	 
+	 integer i;
+	 
+	 initial 
+		begin
+		
+		for (i = 0; i < 16; i = i + 1) begin
+            {a, b, sel, Cin} = i;
+            #60;
+        end
+	end
+
+
 endmodule

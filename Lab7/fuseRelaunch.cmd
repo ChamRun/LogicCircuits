@@ -1,0 +1,1 @@
+-intstyle "ise" -incremental -lib "unisims_ver" -lib "unimacro_ver" -lib "xilinxcorelib_ver" -lib "secureip" -o "C:/Things/Programming/uni/LogicCircuits/Lab7/TwoBitTB_isim_beh.exe" -prj "C:/Things/Programming/uni/LogicCircuits/Lab7/TwoBitTB_beh.prj" "work.TwoBitTB" "work.glbl" 
