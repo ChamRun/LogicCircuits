@@ -21,18 +21,18 @@
 module TwoBitTB(
     );
 	 
-	 reg a, b, sel, Cin;
+	 reg a, b, sel;
 	 wire Sum, Cout;
 	 
-	 FullAdder adder0(Sum, Cout, a, (b ^ sel), Cin);
+	 FullAdder adder0(Sum, Cout, a, (b ^ sel), sel);
 	 
 	 integer i;
 	 
 	 initial 
 		begin
 		
-		for (i = 0; i < 16; i = i + 1) begin
-            {a, b, sel, Cin} = i;
+		for (i = 0; i < 8; i = i + 1) begin
+            {a, b, sel} = i;
             #60;
 		end
 		
