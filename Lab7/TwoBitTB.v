@@ -34,8 +34,9 @@ module TwoBitTB(
 		for (i = 0; i < 16; i = i + 1) begin
             {a, b, sel, Cin} = i;
             #60;
-        end
-	end
+		end
+		
+	 end
 
 
 endmodule
