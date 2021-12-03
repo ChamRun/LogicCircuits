@@ -174,7 +174,7 @@ LAB16:    xsi_set_current_line(52, ng0);
     xsi_vlogvar_assign_value(t18, t17, 0, 0, 4);
     xsi_set_current_line(53, ng0);
     t2 = (t0 + 4256);
-    xsi_process_wait(t2, 4000LL);
+    xsi_process_wait(t2, 100000LL);
     *((char **)t1) = &&LAB17;
     goto LAB1;
 

@@ -50,7 +50,7 @@ module FourBitTB(
 					for (k = 0; k < j; k = k + 1)
 					begin
 						b = k;
-						#4;
+						#100;
 					end	
 				end
 			end
