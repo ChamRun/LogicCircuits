@@ -27,13 +27,10 @@ module MUX(
 	input [1:0]	s
     );
 
-    
-
-    //assign y = w0;
 
     assign y =  (s[1] & s[1]) ? w3:
-                (s[1] & s[0]) ? w2:
-                (s[0] & s[1]) ? w1:
+                (s[0] & s[1]) ? w2:
+                (s[1] & s[0]) ? w1:
                 (s[0] & s[0]) ? w0:
                                 w0;
 	 
