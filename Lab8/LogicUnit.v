@@ -25,7 +25,7 @@ module LogicUnit(
     output[3:0] not_a
     );
 
-    assign a_nand_b = a ~& b;
+    assign a_nand_b = ~(a & b);
     assign not_a = ~a;
     
 
