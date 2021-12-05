@@ -1,6 +1,6 @@
 `timescale 1ns / 1ps
 //////////////////////////////////////////////////////////////////////////////////
-// Company: 
+// Company: https://github.com/ChamRun/
 // Engineer: 
 // 
 // Create Date:    20:16:03 12/05/2021 
@@ -27,6 +27,6 @@ module LogicUnit(
 
     assign a_nand_b = ~(a & b);
     assign not_a = ~a;
-    
+
 
 endmodule

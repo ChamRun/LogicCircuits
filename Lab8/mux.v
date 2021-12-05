@@ -1,6 +1,6 @@
 `timescale 1ns / 1ps
 //////////////////////////////////////////////////////////////////////////////////
-// Company: 
+// Company: https://github.com/ChamRun/
 // Engineer: 
 // 
 // Create Date:    20:23:59 12/05/2021 
@@ -18,28 +18,23 @@
 // Additional Comments: 
 //
 //////////////////////////////////////////////////////////////////////////////////
-module mux(
+module MUX(
+    output [3:0] y,
 	input [3:0] w3,
 	input [3:0] w2,
 	input [3:0] w1,
 	input [3:0] w0,
-	input [1:0]	s,
-	output [3:0] y
+	input [1:0]	s
     );
 
+    
 
+    //assign y = w0;
 
-    if (s == 0) begin
-        assign y = w0;
-    end
-    else if (s == 1) begin
-        assign y = w1;
-    end
-    else if (s == 2) begin
-        assign y = w2;
-    end
-    else if (s == 3) begin
-        assign y = w3;
-    end
-
+    assign y =  (s[1] & s[1]) ? w3:
+                (s[1] & s[0]) ? w2:
+                (s[0] & s[1]) ? w1:
+                (s[0] & s[0]) ? w0:
+                                w0;
+	 
 endmodule
