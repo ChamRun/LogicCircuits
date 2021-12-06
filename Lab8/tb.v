@@ -26,8 +26,8 @@ module tb();
 
     wire [3:0] Multiply;
     wire [3:0] Add;
-    wire [3:0] NAND;
     wire [3:0] NOT_A;
+    wire [3:0] NAND;
     wire [3:0] y;
 
     integer i;
