@@ -19,13 +19,13 @@
 //
 //////////////////////////////////////////////////////////////////////////////////
 module MUX(
-    output [3:0] y,
-	input [3:0] w3,
-	input [3:0] w2,
-	input [3:0] w1,
-	input [3:0] w0,
-	input [1:0]	s
-    );
+      output [3:0] y,
+		input [3:0] w3,
+		input [3:0] w2,
+		input [3:0] w1,
+		input [3:0] w0,
+		input [1:0]	s
+		 );
 
 
     assign y =  ( s[1] &  s[0]) ? w3:
