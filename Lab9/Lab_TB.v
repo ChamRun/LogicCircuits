@@ -3,9 +3,9 @@
 // Company: 
 // Engineer: 
 // 
-// Create Date:    19:30:12 12/13/2021 
+// Create Date:    20:38:24 12/13/2021 
 // Design Name: 
-// Module Name:    SRFF_TB 
+// Module Name:    Lab_TB 
 // Project Name: 
 // Target Devices: 
 // Tool versions: 
@@ -18,35 +18,20 @@
 // Additional Comments: 
 //
 //////////////////////////////////////////////////////////////////////////////////
-module SRFF_TB(
+module Lab_TB(
     );
 
-    reg s, r;
-    wire q, qp;
+    reg a, b, clk;
+    wire y, z, r, s;
 
 	 
-	SRFF srff0(q, qp, s, r);
-
-
+	Lab lab0(y, z, r, s, a, b, clk);
+	 
     initial begin
-        {s, r} = 1;
-		  #100;
-		  {s, r} = 0;
-		  #100;
-		  {s, r} = 2;
-		  #100;
-		  {s, r} = 0;
-		  #100;
-		  {s, r} = 2;
-		  #100;
-		  {s, r} = 1;
-		  #100;
-		  {s, r} = 0;
-		  #100;
-		  
+        c = 0; b = 0;
+        #100;
+        
     end
-
-
 
 
 endmodule

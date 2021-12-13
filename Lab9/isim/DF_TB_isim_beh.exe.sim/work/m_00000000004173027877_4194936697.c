@@ -21,10 +21,10 @@
 #include <malloc.h>
 #define alloca _alloca
 #endif
-static const char *ng0 = "C:/Things/Programming/uni/LogicCircuits/Lab9/SRFF_TB.v";
+static const char *ng0 = "C:/Things/Programming/uni/LogicCircuits/Lab9/DF_TB.v";
 static int ng1[] = {0, 0};
 static int ng2[] = {2, 0};
-static int ng3[] = {3, 0};
+static int ng3[] = {4, 0};
 static int ng4[] = {1, 0};
 
 
@@ -145,9 +145,9 @@ LAB13:    xsi_set_current_line(34, ng0);
 }
 
 
-extern void work_m_00000000000981500836_3740606257_init()
+extern void work_m_00000000004173027877_4194936697_init()
 {
 	static char *pe[] = {(void *)Initial_32_0};
-	xsi_register_didat("work_m_00000000000981500836_3740606257", "isim/SRFF_TB_isim_beh.exe.sim/work/m_00000000000981500836_3740606257.didat");
+	xsi_register_didat("work_m_00000000004173027877_4194936697", "isim/DF_TB_isim_beh.exe.sim/work/m_00000000004173027877_4194936697.didat");
 	xsi_register_executes(pe);
 }

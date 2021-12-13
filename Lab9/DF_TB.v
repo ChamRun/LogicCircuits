@@ -3,9 +3,9 @@
 // Company: 
 // Engineer: 
 // 
-// Create Date:    19:30:12 12/13/2021 
+// Create Date:    20:04:06 12/13/2021 
 // Design Name: 
-// Module Name:    SRFF_TB 
+// Module Name:    DF_TB 
 // Project Name: 
 // Target Devices: 
 // Tool versions: 
@@ -18,34 +18,26 @@
 // Additional Comments: 
 //
 //////////////////////////////////////////////////////////////////////////////////
-module SRFF_TB(
+module DF_TB(
     );
 
-    reg s, r;
+    reg d, c;
     wire q, qp;
 
 	 
-	SRFF srff0(q, qp, s, r);
+	DFF dff0(q, qp, d, c);
 
-
+    integer i, j;
+	 
     initial begin
-        {s, r} = 1;
-		  #100;
-		  {s, r} = 0;
-		  #100;
-		  {s, r} = 2;
-		  #100;
-		  {s, r} = 0;
-		  #100;
-		  {s, r} = 2;
-		  #100;
-		  {s, r} = 1;
-		  #100;
-		  {s, r} = 0;
-		  #100;
-		  
+        for (j=0; j<2; j = j + 1) begin
+            for (i=0; i<4; i = i + 1) begin
+                {d, c} = i;
+                #100;
+            end	  
+        end
+        
     end
-
 
 
 

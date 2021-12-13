@@ -3,9 +3,9 @@
 // Company: 
 // Engineer: 
 // 
-// Create Date:    19:30:12 12/13/2021 
+// Create Date:    19:52:23 12/13/2021 
 // Design Name: 
-// Module Name:    SRFF_TB 
+// Module Name:    DFF 
 // Project Name: 
 // Target Devices: 
 // Tool versions: 
@@ -18,34 +18,19 @@
 // Additional Comments: 
 //
 //////////////////////////////////////////////////////////////////////////////////
-module SRFF_TB(
+module DFF(
+    output q,
+    output qp,
+    input d,
+    input c
     );
 
-    reg s, r;
-    wire q, qp;
+    wire s, r;
+    assign s = ~(c & d);
+    assign r = ~(c & ~d);
 
-	 
-	SRFF srff0(q, qp, s, r);
-
-
-    initial begin
-        {s, r} = 1;
-		  #100;
-		  {s, r} = 0;
-		  #100;
-		  {s, r} = 2;
-		  #100;
-		  {s, r} = 0;
-		  #100;
-		  {s, r} = 2;
-		  #100;
-		  {s, r} = 1;
-		  #100;
-		  {s, r} = 0;
-		  #100;
-		  
-    end
-
+    assign q = ~(s & qp);
+    assign qp = ~(r & q);
 
 
 

@@ -3,9 +3,9 @@
 // Company: 
 // Engineer: 
 // 
-// Create Date:    19:30:12 12/13/2021 
+// Create Date:    20:23:19 12/13/2021 
 // Design Name: 
-// Module Name:    SRFF_TB 
+// Module Name:    Lab 
 // Project Name: 
 // Target Devices: 
 // Tool versions: 
@@ -18,35 +18,30 @@
 // Additional Comments: 
 //
 //////////////////////////////////////////////////////////////////////////////////
-module SRFF_TB(
+module Lab(
+    output y,
+    output z,
+
+    output r,
+    output s,
+    
+    input a,
+    input b,
+
+    input clk
     );
+    
 
-    reg s, r;
-    wire q, qp;
+    wire d0, q0, qp0, d1, q1, qp1;
 
-	 
-	SRFF srff0(q, qp, s, r);
+    DFF dff1(q0, qp0, d0, clk);
+    DFF dff2(q1, qp1, d1, clk);
 
-
-    initial begin
-        {s, r} = 1;
-		  #100;
-		  {s, r} = 0;
-		  #100;
-		  {s, r} = 2;
-		  #100;
-		  {s, r} = 0;
-		  #100;
-		  {s, r} = 2;
-		  #100;
-		  {s, r} = 1;
-		  #100;
-		  {s, r} = 0;
-		  #100;
-		  
-    end
-
-
+    assign s = b & qp1;
+    assign d0 = a | s;
+    assign d1 = ~(d0 | qp0);
+    assign r = qp1 & b;
+    assign z = qp0 & r;
 
 
 endmodule
