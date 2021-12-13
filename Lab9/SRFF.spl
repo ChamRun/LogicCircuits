@@ -1,0 +1,10 @@
+[Inputs]
+s
+r
+[Outputs]
+q
+qp
+[BiDir]
+[ATTRIBUTES]
+VeriModel SRFF
+

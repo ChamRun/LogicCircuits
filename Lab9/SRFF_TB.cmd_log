@@ -1,0 +1,8 @@
+vhdtdtfi -lib work C:/Things/Programming/uni/LogicCircuits/Lab9/SRFF_TB.v -lang verilog -prj Lab9 -o SRFF_TB.spl -module SRFF_TB -template C:/Xilinx/14.7/ISE_DS/ISE//data/splveri.tft -deleteonerror 
+spl2sym -intstyle ise -family spartan6 SRFF_TB.spl C:/Things/Programming/uni/LogicCircuits/Lab9/SRFF_TB.sym 
+vhdtdtfi -lang verilog -prj Lab9 -o C:/Things/Programming/uni/LogicCircuits/Lab9/SRFF_TB.tfi -lib work C:/Things/Programming/uni/LogicCircuits/Lab9//SRFF_TB.v -module SRFF_TB -template C:/Xilinx/14.7/ISE_DS/ISE//data/tfi.tft -deleteonerror 
+vhdtdtfi -lib work C:/Things/Programming/uni/LogicCircuits/Lab9/SRFF_TB.v -lang verilog -prj Lab9 -o SRFF_TB.spl -module SRFF_TB -template C:/Xilinx/14.7/ISE_DS/ISE//data/splveri.tft -deleteonerror 
+spl2sym -intstyle ise -family spartan6 SRFF_TB.spl C:/Things/Programming/uni/LogicCircuits/Lab9/SRFF_TB.sym 
+vhdtdtfi -lib work C:/Things/Programming/uni/LogicCircuits/Lab9/SRFF_TB.v -lang verilog -prj Lab9 -o SRFF_TB.spl -module SRFF_TB -template C:/Xilinx/14.7/ISE_DS/ISE//data/splveri.tft -deleteonerror 
+spl2sym -intstyle ise -family spartan6 SRFF_TB.spl C:/Things/Programming/uni/LogicCircuits/Lab9/SRFF_TB.sym 
+vhdtdtfi -lang verilog -prj Lab9 -o C:/Things/Programming/uni/LogicCircuits/Lab9/SRFF_TB.tfi -lib work C:/Things/Programming/uni/LogicCircuits/Lab9//SRFF_TB.v -module SRFF_TB -template C:/Xilinx/14.7/ISE_DS/ISE//data/tfi.tft -deleteonerror 

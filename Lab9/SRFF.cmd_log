@@ -1,0 +1,2 @@
+vhdtdtfi -lib work C:/Things/Programming/uni/LogicCircuits/Lab9/SRFF.v -lang verilog -prj Lab9 -o SRFF.spl -module SRFF -template C:/Xilinx/14.7/ISE_DS/ISE//data/splveri.tft -deleteonerror 
+spl2sym -intstyle ise -family spartan6 SRFF.spl C:/Things/Programming/uni/LogicCircuits/Lab9/SRFF.sym 
