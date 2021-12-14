@@ -37,11 +37,22 @@ module Lab(
     DFF dff1(q0, qp0, d0, clk);
     DFF dff2(q1, qp1, d1, clk);
 
-    assign s = b & qp1;
-    assign d0 = a | s;
-    assign d1 = ~(d0 | qp0);
-    assign r = qp1 & b;
-    assign z = qp0 & r;
+    // assign s = b & qp1;
+    and and0(s, b, qp1);
+
+    // assign d0 = a | s;
+    or or0(d0, a, s);
+    
+    // assign d1 = ~(d0 | qp0);
+    nor nor0(d1, d0, qp0);
+    
+    // assign r = qp1 & b;
+    and and1(r, qp1, b);
+    
+    // assign z = qp0 & r;
+    and and2(z, qp0, r);
+    
+    assign y = q0;
 
 
 endmodule

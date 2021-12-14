@@ -26,11 +26,18 @@ module DFF(
     );
 
     wire s, r;
-    assign s = ~(c & d);
-    assign r = ~(c & ~d);
+    nand nand0(s, c, d);
+    //assign s = ~(c & d);
+    
+    wire not_d;
+    not not0(not_d, d);
+    nand nand1(r, c, not_d);
+    //assign r = ~(c & ~d);
 
-    assign q = ~(s & qp);
-    assign qp = ~(r & q);
+    nand nand2(q, s, qp);
+    //assign q = ~(s & qp);
+    nand nand3(qp, r, q);
+    //assign qp = ~(r & q);
 
 
 
