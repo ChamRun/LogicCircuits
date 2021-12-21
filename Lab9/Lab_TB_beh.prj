@@ -1,3 +1,4 @@
 verilog work "DFF.v"
-verilog work "DF_TB.v"
+verilog work "Lab.v"
+verilog work "Lab_TB.v"
 verilog work "C:/Xilinx/14.7/ISE_DS/ISE//verilog/src/glbl.v"
